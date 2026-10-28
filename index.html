@@ -137,6 +137,8 @@ svg.graf{width:100%; height:auto; display:block}
 @media(max-width:560px){.breve{grid-template-columns:1fr}}
 .breve .card{padding:18px} .breve h3{font-size:1.02rem}
 .tag{display:inline-block; font:600 .66rem var(--mono); letter-spacing:.08em; text-transform:uppercase; background:var(--warn-bg); color:var(--warn); border-radius:999px; padding:3px 10px}
+.tag.ok{background:#DDEFE3; color:var(--income)}
+.breve.um{grid-template-columns:minmax(0,420px)}
 
 /* ---- privacidade e chamada final ---- */
 .priv{display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center}
@@ -161,7 +163,7 @@ svg.graf{width:100%; height:auto; display:block}
   <div class="wrap">
     <a href="#inicio" aria-label="WalletMe, início"><img src="brand/logo-horizontal-escuro.svg" alt="WalletMe" width="156" height="30"></a>
     <nav aria-label="Seções">
-      <a href="#objetivo">Objetivo</a><a href="#diferenciais">Diferenciais</a><a href="#telas">Telas</a><a href="#breve">Em breve</a><a href="#privacidade">Privacidade</a>
+      <a href="#objetivo">Objetivo</a><a href="#diferenciais">Diferenciais</a><a href="#telas">Telas</a><a href="#novidades">Novidades</a><a href="#breve">Em breve</a><a href="#privacidade">Privacidade</a>
     </nav>
     <a class="btn btn--sm" href="https://www.orangeinvest.com.br/entrar/walletme">Entrar<span class="so-desk">&nbsp;no WalletMe</span></a>
   </div>
@@ -333,18 +335,30 @@ svg.graf{width:100%; height:auto; display:block}
   </div>
 </section>
 
+<!-- ========================================================= NOVIDADES -->
+<section class="alt" id="novidades">
+  <div class="wrap">
+    <span class="eyebrow">Novidades</span>
+    <h2>O que acabou de chegar.</h2>
+    <p class="intro">Recursos que estavam no roteiro e já estão no aplicativo.</p>
+    <div class="breve">
+      <div class="card"><span class="tag ok">Disponível</span><h3>Importar extrato</h3><p>Traga o arquivo do banco (OFX) ou uma planilha, revise e confira o saldo antes de gravar.</p></div>
+      <div class="card"><span class="tag ok">Disponível</span><h3>Patrimônio</h3><p>O que você tem menos o que deve, e como isso evolui mês a mês.</p></div>
+      <div class="card"><span class="tag ok">Disponível</span><h3>Reembolsos</h3><p>Marque o que vai voltar e dê baixa quando o dinheiro chegar, sem inflar o gasto.</p></div>
+      <div class="card"><span class="tag ok">Disponível</span><h3>Tags</h3><p>Etiquetas para viagens, reformas e o que mais você quiser acompanhar à parte.</p></div>
+      <div class="card"><span class="tag ok">Disponível</span><h3>Fechamento do mês</h3><p>Uma lista de conferência de fim de mês e o resumo guardado.</p></div>
+    </div>
+  </div>
+</section>
+
 <!-- ========================================================= EM BREVE -->
-<section class="alt" id="breve">
+<section id="breve">
   <div class="wrap">
     <span class="eyebrow">Em breve</span>
-    <h2>O que está sendo construído.</h2>
+    <h2>O que vem a seguir.</h2>
     <p class="intro">Funcionalidades em desenvolvimento. A ordem e o formato ainda podem mudar conforme o retorno de quem usa.</p>
-    <div class="breve">
-      <div class="card"><span class="tag">Em desenvolvimento</span><h3>Importar extrato</h3><p>Traga o arquivo do banco (OFX) ou uma planilha, revise e confira o saldo antes de gravar.</p></div>
-      <div class="card"><span class="tag">Em desenvolvimento</span><h3>Patrimônio</h3><p>O que você tem menos o que deve, e como isso evolui mês a mês.</p></div>
-      <div class="card"><span class="tag">Em desenvolvimento</span><h3>Reembolsos</h3><p>Marque o que vai voltar e dê baixa quando o dinheiro chegar, sem inflar o gasto.</p></div>
-      <div class="card"><span class="tag">Em desenvolvimento</span><h3>Tags e anexos</h3><p>Etiquetas para viagens e reformas, e comprovantes presos ao lançamento.</p></div>
-      <div class="card"><span class="tag">Em desenvolvimento</span><h3>Fechamento do mês</h3><p>Uma lista de conferência de fim de mês e o resumo guardado.</p></div>
+    <div class="breve um">
+      <div class="card"><span class="tag">Em desenvolvimento</span><h3>Anexos</h3><p>Comprovantes presos ao lançamento, para achar a nota ou o recibo quando precisar.</p></div>
     </div>
   </div>
 </section>
