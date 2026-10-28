@@ -140,6 +140,10 @@ svg.graf{width:100%; height:auto; display:block}
 .tag.ok{background:#DDEFE3; color:var(--income)}
 .breve.um{grid-template-columns:minmax(0,420px)}
 
+.escura figure figcaption span{color:var(--on-chrome-muted)}
+.escura .lista-check li{color:var(--on-chrome)}
+.escura .lista-check svg{color:#FFA35C}
+
 /* ---- privacidade e chamada final ---- */
 .priv{display:grid; grid-template-columns:1.1fr 1fr; gap:40px; align-items:center}
 @media(max-width:860px){.priv{grid-template-columns:1fr}}
@@ -163,7 +167,7 @@ svg.graf{width:100%; height:auto; display:block}
   <div class="wrap">
     <a href="#inicio" aria-label="WalletMe, início"><img src="brand/logo-horizontal-escuro.svg" alt="WalletMe" width="156" height="30"></a>
     <nav aria-label="Seções">
-      <a href="#objetivo">Objetivo</a><a href="#diferenciais">Diferenciais</a><a href="#telas">Telas</a><a href="#novidades">Novidades</a><a href="#breve">Em breve</a><a href="#privacidade">Privacidade</a>
+      <a href="#objetivo">Objetivo</a><a href="#diferenciais">Diferenciais</a><a href="#telas">Telas</a><a href="#casal">Casal</a><a href="#novidades">Novidades</a><a href="#breve">Em breve</a><a href="#privacidade">Privacidade</a>
     </nav>
     <a class="btn btn--sm" href="https://www.orangeinvest.com.br/entrar/walletme">Entrar<span class="so-desk">&nbsp;no WalletMe</span></a>
   </div>
@@ -180,6 +184,7 @@ svg.graf{width:100%; height:auto; display:block}
       <div class="acoes">
         <a class="btn" href="https://www.orangeinvest.com.br/entrar/walletme">Conhecer e entrar</a>
         <a class="btn btn--g" href="#telas">Ver as telas</a>
+        <a class="btn btn--g" href="https://www.orangeinvest.com.br/lista-espera?produto=walletme&origem=landing_walletme">Avise-me do lançamento</a>
       </div>
       <p class="nota">Feito no Brasil, com fatura de cartão, parcelas e vencimentos do jeito que a gente realmente usa. Parte do <a href="https://www.orangeinvest.com.br/">Orange Invest</a>.</p>
     </div>
@@ -335,6 +340,64 @@ svg.graf{width:100%; height:auto; display:block}
   </div>
 </section>
 
+<!-- ========================================================= CASAL -->
+<section class="escura" id="casal">
+  <div class="wrap">
+    <span class="eyebrow">Em casal</span>
+    <h2>Dividir a casa sem planilha e sem climão.</h2>
+    <p class="intro">Um espaço compartilhado entre duas pessoas: cada um continua dono das suas contas e do seu orçamento, e só o que vocês colocam no espaço aparece para os dois. Funciona com ou sem conta conjunta.</p>
+
+    <div class="grade g2" style="margin-bottom:44px">
+      <div class="card"><h3>Com conta conjunta</h3><p>A casa ganha uma visão própria, a <b>Nós</b>, ao lado da sua, a <b>Eu</b>. Despesas, saldo, previsão e acerto de contas do espaço, com a divisão que vocês combinarem: igual ou por percentual.</p></div>
+      <div class="card"><h3>Cada um paga do seu bolso</h3><p>Sem conta conjunta, ninguém precisa mudar de hábito. Vocês marcam <b>quem pagou</b> cada despesa da casa e o WalletMe calcula quanto um deve ao outro, para acertar por Pix.</p></div>
+    </div>
+
+    <div class="galeria">
+      <figure>
+        <div class="tela" role="img" aria-label="Visão Nós da casa de Ana e Beto: despesas do mês R$ 7.420 divididas 58% e 42% e a sua parte na visão Eu">
+          <div class="cx"><div style="display:flex; gap:8px; margin-bottom:10px"><span class="chip" style="--c:#6B5D4E">Eu</span><span class="chip" style="--c:#B83600; background:#FFE0CC">Nós · Casa Ana e Beto</span></div>
+            <div class="rot">Despesas da casa em outubro</div><div class="val m out">R$ 7.420,00</div>
+            <div class="linha"><span>Moradia e contas</span><b>R$ 3.180,00</b></div><div class="linha"><span>Mercado</span><b>R$ 2.240,00</b></div><div class="linha"><span>Lazer</span><b>R$ 1.020,00</b></div></div>
+          <div class="cx fio neu"><div class="rot">Sua parte da casa (Ana · 58%)</div><div class="val m">R$ 4.303,60</div><div class="sub">Já entra no seu orçamento pessoal, na visão Eu</div></div>
+        </div>
+        <figcaption><b>Visão Nós e visão Eu</b><span>A casa de um lado, o seu bolso do outro, e a sua parte da casa dentro do seu orçamento.</span></figcaption>
+      </figure>
+
+      <figure>
+        <div class="tela" role="img" aria-label="Compras no cartão marcadas com de quem é: minha, da Ana ou dividida">
+          <div class="cx"><div class="rot">Fatura · Nubank (Ana)</div>
+            <div class="linha" style="border-top:0"><span>Supermercado</span><span class="chip" style="--c:#2F7D4F">Dividida</span><b>R$ 412,60</b></div>
+            <div class="linha"><span>Farmácia</span><span class="chip" style="--c:#6B5D4E">Minha</span><b>R$ 86,90</b></div>
+            <div class="linha"><span>Presente do Beto</span><span class="chip" style="--c:#1F6F8B">Do Beto</span><b>R$ 230,00</b></div>
+            <div class="linha tot"><span>Total da fatura</span><b>R$ 729,50</b></div></div>
+          <div class="cx fio warn"><div class="rot">Cobrança no espaço</div><div class="sub">O que é do Beto e a parte dele no que é dividido entram no acerto, sem ninguém refazer conta.</div></div>
+        </div>
+        <figcaption><b>Compras do casal no cartão</b><span>Marque de quem é cada compra: sua, do outro ou dividida.</span></figcaption>
+      </figure>
+
+      <figure>
+        <div class="tela" role="img" aria-label="O que você deve: Beto deve R$ 312,40 a Ana, com botão para marcar como recebido">
+          <div class="cx fio out"><div class="rot">O que você deve</div>
+            <div style="display:flex; gap:8px; margin:8px 0"><span class="chip" style="--c:#B42318; background:#FBE3E0">A pagar</span><span class="chip" style="--c:#2F7D4F">A receber</span></div>
+            <div class="linha" style="border-top:0"><span>Outubro · supermercado e contas</span><b class="out">R$ 241,10</b></div>
+            <div class="linha"><span>Outubro · compras no cartão</span><b class="out">R$ 71,30</b></div>
+            <div class="linha tot"><span>Total para a Ana</span><b>R$ 312,40</b></div>
+            <div style="margin-top:12px"><span class="btn btn--sm" style="pointer-events:none">Registrar acerto</span></div></div>
+        </div>
+        <figcaption><b>Acerto de contas</b><span>Quanto um deve ao outro, mês a mês, e o registro de quando foi acertado.</span></figcaption>
+      </figure>
+    </div>
+    <p class="aviso-fic" style="color:var(--on-chrome-muted)">Telas ilustrativas com dados fictícios. Os nomes, valores e datas foram inventados para este exemplo.</p>
+
+    <ul class="lista-check" style="margin-top:34px; max-width:46em">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Convite por link.</b> Quem cria o espaço convida a outra pessoa, que entra com a própria conta.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Divisão do jeito de vocês.</b> Igual, ou com percentuais combinados, que podem mudar quando a vida mudar.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>O que é seu continua só seu.</b> Contas, cartões, metas e lançamentos pessoais não aparecem para a outra pessoa.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Sair é simples.</b> Quem sai leva o que é seu; o que é da casa fica para quem continua.</span></li>
+    </ul>
+  </div>
+</section>
+
 <!-- ========================================================= NOVIDADES -->
 <section class="alt" id="novidades">
   <div class="wrap">
@@ -376,7 +439,7 @@ svg.graf{width:100%; height:auto; display:block}
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Compartilhe só o que quiser.</b> No espaço do casal, só o que está no espaço é visto pelos dois. O resto continua só seu.</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"/></svg><span><b>Você manda nos dados.</b> Apague a movimentação ou a conta quando quiser.</span></li>
       </ul>
-      <p style="margin-top:20px"><a class="btn btn--sm btn--g" style="color:var(--text)" href="https://www.orangeinvest.com.br/termos">Termos e privacidade</a></p>
+      <p style="margin-top:20px"><a class="btn btn--sm btn--g" style="color:var(--text)" href="https://www.orangeinvest.com.br/termos/walletme">Termos e privacidade</a></p>
     </div>
     <div class="tela" role="img" aria-label="Opções de dados: exportar meus dados e começar do zero" style="background:#EFE3D0">
       <div class="cx"><div class="rot">Configurações</div><h3 style="font:600 1.05rem var(--display); margin:6px 0 4px">Exportar meus dados</h3><div class="sub">Um arquivo com tudo o que é seu no WalletMe.</div><div style="margin-top:10px"><span class="btn btn--sm" style="pointer-events:none">Baixar meus dados</span></div></div>
@@ -391,6 +454,7 @@ svg.graf{width:100%; height:auto; display:block}
     <h2>Pronto para ver o seu mês com clareza?</h2>
     <p>O WalletMe está em beta, com acesso por convite. Entre pelo Orange Invest com a sua conta e conheça.</p>
     <a class="btn" href="https://www.orangeinvest.com.br/entrar/walletme">Conhecer e entrar no WalletMe</a>
+    <p style="margin-top:14px"><a href="https://www.orangeinvest.com.br/lista-espera?produto=walletme&origem=landing_walletme" style="color:inherit">Ainda não tem acesso? Deixe o seu e-mail e avisamos quando abrir.</a></p>
   </div>
 </section>
 </main>
@@ -399,7 +463,7 @@ svg.graf{width:100%; height:auto; display:block}
   <div class="wrap">
     <img src="brand/logo-horizontal-escuro.svg" alt="WalletMe" width="136" height="26">
     <span>O WalletMe faz parte do <a href="https://www.orangeinvest.com.br/">Orange Invest</a>. As telas mostradas usam dados fictícios.</span>
-    <span><a href="https://www.orangeinvest.com.br/termos">Termos e privacidade</a></span>
+    <span><a href="https://www.orangeinvest.com.br/termos/walletme">Termos e privacidade</a></span>
   </div>
 </footer>
 </body>
